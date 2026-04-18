@@ -3,19 +3,19 @@ import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const syne = Syne({
-  variable: "--font-display",
+  variable: "--font-display-family",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
 const dmSans = DM_Sans({
-  variable: "--font-sans",
+  variable: "--font-sans-family",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+  variable: "--font-mono-family",
   subsets: ["latin"],
   weight: ["400", "500"],
 });
