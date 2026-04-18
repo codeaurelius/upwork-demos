@@ -228,7 +228,7 @@ function StatCard({
   return (
     <div className="bg-white rounded-xl border border-zinc-200 px-4 py-3 flex flex-col gap-1">
       <span className="text-xs text-zinc-500 font-medium uppercase tracking-wide">{label}</span>
-      <span className={cn("text-2xl font-semibold tabular-nums", accent ? "text-[#25D366]" : "text-zinc-900")}>
+      <span className={cn("font-display text-2xl font-bold tabular-nums tracking-tight", accent ? "text-[#25D366]" : "text-zinc-900")}>
         {value}
       </span>
       {sub && <span className="text-xs text-zinc-400">{sub}</span>}
@@ -298,7 +298,7 @@ export default function RestaurantDashboard() {
               W
             </div>
             <div>
-              <p className="text-white text-sm font-semibold leading-none">WaiterBot</p>
+              <p className="font-display text-white text-sm font-bold leading-none tracking-tight">WaiterBot</p>
               <p className="text-zinc-500 text-xs mt-0.5">Restaurant Suite</p>
             </div>
           </div>
@@ -347,7 +347,7 @@ export default function RestaurantDashboard() {
         {/* Top bar */}
         <header className="bg-white border-b border-zinc-200 px-6 py-3 flex items-center justify-between shrink-0">
           <div>
-            <h1 className="text-base font-semibold text-zinc-900">
+            <h1 className="font-display text-base font-bold text-zinc-900 tracking-tight">
               {activeNav === "dashboard" && "Overview"}
               {activeNav === "contacts" && "Contacts"}
               {activeNav === "campaigns" && "Campaign Sender"}

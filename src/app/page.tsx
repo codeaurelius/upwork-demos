@@ -20,7 +20,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans">
       <main className="max-w-2xl mx-auto px-6 py-16">
-        <h1 className="text-2xl font-semibold tracking-tight mb-2">Demos</h1>
+        <h1 className="font-display text-2xl font-bold tracking-display mb-2">Demos</h1>
         <p className="text-zinc-500 text-sm mb-10">Proposal demos built for Upwork bids.</p>
 
         {demos.length === 0 ? (
