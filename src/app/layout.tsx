@@ -21,7 +21,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Upwork Demos",
+  title: {
+    default: "demos",
+    template: "%s — demo",
+  },
   description: "Proposal demos built for Upwork bids.",
 };
 
