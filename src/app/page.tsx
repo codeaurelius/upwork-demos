@@ -1,7 +1,20 @@
 import Link from "next/link";
 import { getDemos } from "@/lib/demos";
+import { headers } from "next/headers";
 
-export default function Home() {
+export default async function Home() {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const isLocalhost = host.startsWith("localhost") || host.startsWith("127.0.0.1");
+
+  if (!isLocalhost) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <p className="text-zinc-400 text-sm">Page not found.</p>
+      </div>
+    );
+  }
+
   const demos = getDemos();
 
   return (
